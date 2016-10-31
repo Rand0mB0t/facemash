@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+<head>
+<title>Hottie</title>
+<link rel="stylesheet" type="text/css" href="{%static 'facemash/index_style.css' %}">
+</head>
+</body>
+<div id="header">
+<h1><a href={% url 'facemash:index' %}>FACEMASH</a></h1>
+</div>
+{% block main%}
+
+{% endblock %}
+
+<div id="footer">
+	<a href="#">DBIT</a>
+	<a href="#">UIT</a>
+	<a href="#">GEHU</a>
+	<a href="#">DIT</a>
+	<a href="#">RANDOM</a>
+	<br >
+	<a href="index.html">Home</a>
+	<a href="about.html">About</a>
+	<a href="submit.html">Submit</a>
+	<a href="rankings.html">Rankings</a>
+    <a href="developer.html">m@st3r_c0d3r</a>
+</div>
+</body>
+</html>

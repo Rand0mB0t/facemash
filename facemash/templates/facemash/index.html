@@ -1,0 +1,23 @@
+{% extends 'facemash/base.html' %}
+
+{% block main %}
+{% load static %}
+<div id="main">
+<h3>Were we let in for our looks? No. Will we be judged on them? Yes.</h3>
+<h2>Who's Hotter? Click to Choose.</h2>
+<table>
+{% static "" as base_url %}
+<tr>
+<form action={% url 'facemash:select' %} method="post" >
+	{%csrf_token%}
+	<td>--</td>
+{% for im in image_list %}
+	<td><input type="image" src={{ base_url }}{{ im.image }} width=175px height=250px name="choice" value={{ im.id }}></td><!---  here base_url contains static address and im.image is from the database   --->
+	<td>--</td>
+{% endfor %}
+</form>
+</tr>
+</table>
+</div>
+
+{% endblock %}

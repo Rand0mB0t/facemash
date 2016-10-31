@@ -1,0 +1,54 @@
+body 
+{
+ font-family: Jokerman;
+ margin: 0;
+ padding: 0;
+ text-align: center;
+}
+a 
+{
+ text-decoration: none;
+ color: darkblue;
+}
+a:hover 
+{
+ text-decoration: underline;
+}
+img
+{
+ width: 175px;
+ height: 250px;
+ border: 2px solid #aaa;
+}
+#header 
+{
+ background-color: #8C1B08;
+ color: #fff;
+ padding: 5px;
+}
+#footer
+{
+	background-color:8C1B08;
+	color:#fff;
+	padding:5px;
+	bottom:0px;
+	position:fixed;
+	width:100%;
+	left:0px;
+	bottom:0px;
+	text-align:center;
+}
+#header a
+{
+ color: #fff;
+ text-decoration: none;
+}
+#main table 
+{
+ margin: 0 auto;
+}
+#footer a 
+{
+ margin-right: 10px;
+ color:#fff;
+}
